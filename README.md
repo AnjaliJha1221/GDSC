@@ -1,2 +1,2 @@
-# GDSC-
+DSA
 Assignments
