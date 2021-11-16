@@ -1,0 +1,24 @@
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+        int left_sum=0, right_sum=0;
+        int n=0;
+          while(n< nums.size()){
+            left_sum=0, right_sum=0;
+            for(int j=0; j<n; j++){
+                left_sum += nums[j];
+            }
+             for(int k= nums.size()-1; k>n; k--){
+                right_sum += nums[k];
+            }    
+            
+            if(left_sum == right_sum){
+                return n;
+            }
+            else {
+                n++;
+            }     
+        }
+     return -1;
+    }
+};
