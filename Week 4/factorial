@@ -1,0 +1,10 @@
+ class(sulution){
+ public:
+ long long int factorial(int N){
+    if( n==0)
+    return 1;
+
+    int A_fact = n* factorial(n-1);
+    return A_fact;
+ }
+}
